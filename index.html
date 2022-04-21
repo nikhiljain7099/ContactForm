@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        form{
+            width: 50%;
+            margin:auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(248, 248, 248);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgb(126, 125, 125);
+        }
+        header{
+            color:white;
+            background-color: rgb(174, 203, 123);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 2px 50px;
+        }
+        header h5{
+            font-weight: lighter;
+            margin-top: 0px;
+        }
+        header h1{
+            font-weight: 400;
+            margin-bottom: 0px;
+        }
+        main{
+            width: 90%;
+            margin: auto;
+            padding-bottom: 40px;
+        }
+        div{
+            margin-top: 20px;
+            font-size:14px;
+        }
+        input,textarea{
+            width: 98%;
+            margin-top: 3px;
+            padding: 10px;
+            border: 1px solid rgb(210, 210, 210);
+        }
+        input::placeholder,textarea::placeholder{
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input[type=submit]{
+            margin-top: 5px;
+            width: 13%;
+            background-color: rgb(174, 203, 123);
+            color: white;
+            border-radius: 5px;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div>
+    <form>
+        <header>
+        <h1 data-em="hi" >Contact Form</h1>
+        <h5>Please fill all the texts in the fields.</h5>
+        </header>
+        <main>
+        <div>
+        Your Name :
+        <input type="text" name="name" id="name" placeholder="Your Full Name">
+        </div>
+        <div>
+        Your Email :
+        <input type="email" name="email" id="email" placeholder="Valid Email Address">
+        </div>
+        <div>
+        Message : <br>
+        <textarea placeholder="Your Message to Us" name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+        Subject :
+        <input type="text" name="subject" id="subject" placeholder="Enter Your Subject" >
+        </div>
+        <input type="submit" value="Send">
+        </main>
+    </form>
+</div>
+</body>
+</html>
